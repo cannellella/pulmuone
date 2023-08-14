@@ -1,0 +1,466 @@
+/*Mobile*/
+@media screen and (max-width:769px){
+  #wrap{width:100%;height:100%;}
+  .sub_header{display: none;}
+  .container{width:100%;}
+  
+  /*container 1 열 사진*/
+  div.spot_visual{display:none;}
+  
+  /*container 2 열 페이지 설명*/
+  div.spot{width:100%;  margin: 0 auto;}
+  
+  /*container 3 열 페이지 네비게이션 메뉴바*/
+  ul.content_nav{width:95%; height:50px; margin: 60px auto; border: 1px solid #ddd;}
+  
+  /*container 4열 연간 재무실적 에대한 페이지설명*/
+  div.investment{width:100%;   margin: 50px auto;}
+  
+  /*container 5열 재무상태표*/
+  article.finance{overflow-x:scroll; width:96%;  margin: 50px 2%;}
+  
+  /*container 6열 주식정보*/
+  article.stock{overflow-x:scroll; width:96%; margin: 0 2% 150px 1%; border-bottom: 1px solid #d6d6d6;}
+  
+  /*서브 메뉴바 제거*/
+
+  /*container 2 열 spot (페이지 설명) */
+  /*1열 투자정보 + 라인*/
+  div.spot>h2{padding-top:20px; margin-left:2%; font-size:20px; font-family:'PulmuoneLOHASBold'; color:#1e1e1e;
+  background: url(../img/sub_1/tit_bg.png) repeat-x top; }
+  div.spot>h2>span{width:150px; height:30px;}
+  
+  /*2열 풀무원의 경영정보,재무정보,주식정보,전자공고등을 한눈에 확인할 수 있습니다.*/
+  div.spot>p{margin-top:45px; font-family:'PulmuoneLOHASBold'; font-size: 28px; text-align:center; color:#1e1e1e;}
+  div.spot>p>span{color:rgb(142, 205, 14);}
+  
+  /*container 3 열 content_nav 페이지 네비게이션 메뉴바*/
+  ul.content_nav{display: none;}
+  /*container 3 열 content_nav 페이지 네비게이션 메뉴바 모바일*/
+  select.mob_content_nav{appearance:none; width:96%; height:50px; margin:50px 2% 0; padding-left:20px;
+  border:1px solid #d7d7d7; font-size: 15px; color:#222;
+  background: url(../img/mobile_select_ar.png)no-repeat 95% 50%; background-size:13px;}
+
+  /*container 4열 investment 연간 재무실적 에대한 페이지설명*/
+  
+  /*1열 미니메뉴 재무데이터 /비재무 데이터 */
+  div.investment>ul{display:flex; justify-content:center; margin-top:50px;}
+  /*li 기본속성*/
+  div.investment>ul>li{position:relative; display: block; width:48%; height:50px; border:1px solid #d7d7d7;
+  text-align: center; line-height:50px;}
+  /*텍스트*/
+  div.investment>ul>li>span>a{font-size:15px; color:#333;}
+  /*on 속성*/
+  div.investment>ul>li.on>span::after{content:''; display:block; position:absolute; z-index:-1; bottom:0; left:0; 
+    width:100%; height:100%; background: #8dc63f;}
+  div.investment>ul>li.on>span>a{color:#fff;} 
+
+  /*2열 .financial_visual 사진*/
+  .financial_visual{width:96%; height:600px; margin:60px 0 0 2%;}
+  .financial_visual>img{width:100%;height:600px;}
+  
+  /*2열 .financial_title 연간 재무실적*/
+  .financial_title{margin:60px auto; text-align: center;}
+  .financial_title>h3{font-family:'PulmuoneLOHASBold'; font-size:20px; color:#333;}
+  .financial_title>p{margin-top:30px; font-size:17px; color:#333; text-align: center;}
+  .financial_title>p>span{color:#8dc73f;}
+  
+  /*container 5열 재무상태표*/
+  /*테이블 제목*/
+  .finance>h4{ text-align:left; font-size:20px; font-family:'PulmuoneLOHASBold';color:#333;}
+  .finance>span{display:inline-block; width:100%; margin:10px 0 30px; text-align: end; color:#666;}
+  /*테이블*/
+  .finance>table{width:1185px; height:635px; text-align: center; overflow-x: scroll;}
+  /*전체 td 의 디폴트값*/
+  .finance>table td{position:relative; height:58px; padding-right:25px; text-align:right; font-size:15px; color:#666; 
+    border: 1px solid #d6d6d6;}
+  /*윗쪽 보더값 제거*/
+  .finance>table>tbody>tr:first-of-type>td{border-top: none;}
+  /*왼쪽 보더값 제거*/
+  .finance>table>tbody>tr>td:first-child{border-left: none;}
+  .finance>table>tfoot>tr>td:first-child{border-left: none;}
+  /*오른쪽 보더값 제거*/
+  .finance>table>tbody>tr>td:last-child{border-right: none;}
+  .finance>table>tfoot>tr>td:last-child{border-right: none;}
+  /*t head*/
+  .finance>table>thead{color:#fff; font-size: 17px; background-color: #8dc73f;}
+  .finance>table>thead>tr>th{height:58px; border-right:1px solid #fff; text-align: center;}
+  .finance>table>thead>tr.row_line1{border-bottom:1px solid #fff;}
+  /*전체 기본 th의 디폴트값 2,3,4열 */
+  .finance>table>thead>tr.row_line1 th{width:185px;}
+  /*첫번째열*/
+  .finance>table>thead>tr.row_line1>th:first-of-type{width:250px;}
+  /*상한가와 하한가의 삼각형*/
+  .up:before{
+    content:""; 
+    position:absolute; 
+    display:block;
+    top:50%; left:55%; 
+    margin-top:-3px; 
+    width:0;
+    height:0;
+    border-bottom: 7px solid #2169d8; ;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+  }
+  .down:before{
+    content:""; 
+    position:absolute; 
+    display:block;
+    top:50%; left:55%; 
+    margin-top:-3px; 
+    width:0;
+    height:0;
+    border-top: 7px solid #d0020a; 
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+  }
+  
+  /*container 6열 주식정보*/
+  
+  /*테이블 제목*/
+  .stock>h4{margin:60px 0 40px; text-align:left;  font-size:20px; font-family:'PulmuoneLOHASBold'; color:#333;}
+  /*전체 테이블*/
+  .stock>table{width:1185px; height:465px; text-align: center;}
+  /*thead*/
+  .stock>table>thead{color:#fff; font-size: 17px; background-color: #8dc73f;}
+  .stock>table>thead>tr>th{width:235px; height:58px; border-right:1px solid #fff; text-align: center;}
+  /*전체 td의 디폴트값*/
+  .stock>table td{height:58px; padding-right:25px; font-size: 15px; color:#666; text-align: right;
+  border:1px solid #d6d6d6;}
+  .stock>table>tbody>tr.line td{border-top: 2px solid #333;}
+  .stock>table>tbody>tr.gray td{background: #f4f4f4;}
+  /*왼쪽 보더값 제거*/
+  .stock>table>tbody>tr>td:first-child{padding-left: 25px; border-left: none; text-align: left; }
+  .stock>table>tfoot>tr>td:first-child{border-left:none;}
+}/*Mobile 종료*/
+
+/*Tablet*/
+@media screen and (min-width:769px) and (max-width:1024px){
+  #wrap{width:100%;height:100%;}
+  .sub_header{display: none;}
+  .container{width:100%;}
+  
+  /*container 1 열 사진*/
+  div.spot_visual{display:none;}
+  
+  /*container 2 열 페이지 설명*/
+  div.spot{width:100%;  margin: 0 auto;}
+  
+  /*container 3 열 페이지 네비게이션 메뉴바*/
+  ul.content_nav{width:95%; height:50px; margin: 60px auto; border: 1px solid #ddd;}
+  
+  /*container 4열 연간 재무실적 에대한 페이지설명*/
+  div.investment{width:100%;   margin: 50px auto;}
+  
+  /*container 5열 재무상태표*/
+  article.finance{overflow-x:scroll; width:96%;  margin: 50px 2%;}
+  
+  /*container 6열 주식정보*/
+  article.stock{overflow-x:scroll; width:96%; margin: 0 2% 200px 1%; border-bottom: 1px solid #d6d6d6;}
+  
+  /*서브 메뉴바 제거*/
+
+  /*container 2 열 spot (페이지 설명) */
+  /*1열 투자정보 + 라인*/
+  div.spot>h2{padding-top:20px; margin-left:2%; font-size:20px; font-family:'PulmuoneLOHASBold'; color:#1e1e1e;
+  background: url(../img/sub_1/tit_bg.png) repeat-x top; }
+  div.spot>h2>span{width:150px; height:30px;}
+  
+  /*2열 풀무원의 경영정보,재무정보,주식정보,전자공고등을 한눈에 확인할 수 있습니다.*/
+  div.spot>p{margin-top:45px; font-family:'PulmuoneLOHASBold'; font-size: 28px; text-align:center; color:#1e1e1e;}
+  div.spot>p>span{color:rgb(142, 205, 14);}
+  
+  /*container 3 열 content_nav 페이지 네비게이션 메뉴바*/
+  ul.content_nav{display: none;}
+  /*container 3 열 content_nav 페이지 네비게이션 메뉴바 모바일*/
+  select.mob_content_nav{appearance:none; width:96%; height:50px; margin:50px 2% 0; padding-left:20px;
+  border:1px solid #d7d7d7; font-size: 15px; color:#222;
+  background: url(../img/mobile_select_ar.png)no-repeat 95% 50%; background-size:13px;}
+
+  /*container 4열 investment 연간 재무실적 에대한 페이지설명*/
+  
+  /*1열 미니메뉴 재무데이터 /비재무 데이터 */
+  div.investment>ul{display:flex; justify-content:center; margin-top:50px;}
+  /*li 기본속성*/
+  div.investment>ul>li{position:relative; display: block; width:48%; height:50px; border:1px solid #d7d7d7;
+  text-align: center; line-height:50px;}
+  /*텍스트*/
+  div.investment>ul>li>span>a{font-size:15px; color:#333;}
+  /*on 속성*/
+  div.investment>ul>li.on>span::after{content:''; display:block; position:absolute; z-index:-1; bottom:0; left:0; 
+    width:100%; height:100%; background: #8dc63f;}
+  div.investment>ul>li.on>span>a{color:#fff;} 
+
+  /*2열 .financial_visual 사진*/
+  .financial_visual{width:96%; height:600px; margin:60px 0 0 2%;}
+  .financial_visual>img{width:100%;height:600px;}
+  
+  /*2열 .financial_title 연간 재무실적*/
+  .financial_title{margin:60px auto; text-align: center;}
+  .financial_title>h3{font-family:'PulmuoneLOHASBold'; font-size:20px; color:#333;}
+  .financial_title>p{margin-top:30px; font-size:17px; color:#333; text-align: center;}
+  .financial_title>p>span{color:#8dc73f;}
+  
+  /*container 5열 재무상태표*/
+  /*테이블 제목*/
+  .finance>h4{ text-align:left; font-size:20px; font-family:'PulmuoneLOHASBold';color:#333;}
+  .finance>span{display:inline-block; width:100%; margin:10px 0 30px; text-align: end; color:#666;}
+  /*테이블*/
+  .finance>table{width:1185px; height:635px; text-align: center; overflow-x: scroll;}
+  /*전체 td 의 디폴트값*/
+  .finance>table td{position:relative; height:58px; padding-right:25px; text-align:right; font-size:15px; color:#666; 
+    border: 1px solid #d6d6d6;}
+  /*윗쪽 보더값 제거*/
+  .finance>table>tbody>tr:first-of-type>td{border-top: none;}
+  /*왼쪽 보더값 제거*/
+  .finance>table>tbody>tr>td:first-child{border-left: none;}
+  .finance>table>tfoot>tr>td:first-child{border-left: none;}
+  /*오른쪽 보더값 제거*/
+  .finance>table>tbody>tr>td:last-child{border-right: none;}
+  .finance>table>tfoot>tr>td:last-child{border-right: none;}
+  /*t head*/
+  .finance>table>thead{color:#fff; font-size: 17px; background-color: #8dc73f;}
+  .finance>table>thead>tr>th{height:58px; border-right:1px solid #fff; text-align: center;}
+  .finance>table>thead>tr.row_line1{border-bottom:1px solid #fff;}
+  /*전체 기본 th의 디폴트값 2,3,4열 */
+  .finance>table>thead>tr.row_line1 th{width:185px;}
+  /*첫번째열*/
+  .finance>table>thead>tr.row_line1>th:first-of-type{width:250px;}
+  /*상한가와 하한가의 삼각형*/
+  .up:before{
+    content:""; 
+    position:absolute; 
+    display:block;
+    top:50%; left:55%; 
+    margin-top:-3px; 
+    width:0;
+    height:0;
+    border-bottom: 7px solid #2169d8; ;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+  }
+  .down:before{
+    content:""; 
+    position:absolute; 
+    display:block;
+    top:50%; left:55%; 
+    margin-top:-3px; 
+    width:0;
+    height:0;
+    border-top: 7px solid #d0020a; 
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+  }
+  
+  /*container 6열 주식정보*/
+  
+  /*테이블 제목*/
+  .stock>h4{margin:60px 0 40px; text-align:left;  font-size:20px; font-family:'PulmuoneLOHASBold'; color:#333;}
+  /*전체 테이블*/
+  .stock>table{width:1185px; height:465px; text-align: center;}
+  /*thead*/
+  .stock>table>thead{color:#fff; font-size: 17px; background-color: #8dc73f;}
+  .stock>table>thead>tr>th{width:235px; height:58px; border-right:1px solid #fff; text-align: center;}
+  /*전체 td의 디폴트값*/
+  .stock>table td{height:58px; padding-right:25px; font-size: 15px; color:#666; text-align: right;
+  border:1px solid #d6d6d6;}
+  .stock>table>tbody>tr.line td{border-top: 2px solid #333;}
+  .stock>table>tbody>tr.gray td{background: #f4f4f4;}
+  /*왼쪽 보더값 제거*/
+  .stock>table>tbody>tr>td:first-child{padding-left: 25px; border-left: none; text-align: left; }
+  .stock>table>tfoot>tr>td:first-child{border-left:none;}
+}/*Tablet종료*/
+
+/*pc*/
+@media screen and (min-width:1025px) {
+
+/*mob_content_nav 제거*/
+.mob_content_nav{display:none;}
+
+#wrap{width:100%; height:100%;}
+
+.sub_header{position:relative; z-index:30; width:100%; height:60px; background: #8dc73f;}
+
+.container{width:100%;}
+
+/*container 1 열 사진*/
+div.spot_visual{position:relative; z-index:20; overflow:hidden; width:100%; height:250px;text-indent: -9999px; background:url(../img/sub_1/kv_type01.jpg);}
+
+/*container 2 열 페이지 설명*/
+div.spot{width:1180px;height:420px;margin: 0 auto;}
+
+/*container 3 열 페이지 네비게이션 메뉴바*/
+ul.content_nav{width:1180px; height:70px; margin: 0 auto;
+  border: 1px solid #ddd; border-bottom:2px solid #8dc63f;}
+
+/*container 4열 연간 재무실적 에대한 페이지설명*/
+div.investment{width:1180px; height:890px; margin: 0 auto;}
+
+/*container 5열 재무상태표*/
+article.finance{width:1180px; margin: 0 auto;}
+
+/*container 6열 주식정보*/
+article.stock{width:1180px; margin: 0 auto 200px;}
+
+/*서브 메뉴바*/
+.sub_header>ul{position:absolute; display:block; box-sizing: border-box; left:10%; width:1180px;}
+.sub_header>ul>li{float:left; width:215px; height:100%; line-height: 60px; text-align: left;
+  border: 1px solid #b7d47f; border-bottom: none; border-top: none;}
+.sub_header>ul>li:first-of-type{width:60px; border-right:none; text-align: center;}
+.sub_header>ul>li:nth-of-type(2){border-right:none;}
+.sub_header>ul>li>a{margin-left:15px;font-size:17px; color:#fff;}
+.sub_header>ul>li:first-of-type>a{margin-left:0px; }
+.sub_header>ul>li>ul>li{display:none; line-height: 40px; background: #8dc73f;}
+.sub_header>ul>li>ul>li>a{ margin-left:15px; font-size:17px; color:#fff;}
+
+/*on*/
+.sub_header>ul>li.on>ul>li{display: block;}
+
+/*container 2 열 spot (페이지 설명) */
+/*1열 투자정보 + 라인*/
+div.spot>h2{margin-top:50px; font-size:35px; font-family:'PulmuoneLOHASBold'; color:#1e1e1e; 
+  background: url(../img/sub_1/tit_bg.png) repeat-x left; }
+div.spot>h2>span{width:150px; height:30px; background: #fff;}
+
+/*2열 풀무원의 경영정보,재무정보,주식정보,전자공고등을 한눈에 확인할 수 있습니다.*/
+div.spot>p{margin-top: 120px; font-family:'PulmuoneLOHASBold'; font-size: 50px; text-align:center; color:#1e1e1e;
+  opacity: 0; transform: translateY(100px); transition: all 1s ease 0.5s;}
+div.spot>p>span{color:rgb(142, 205, 14);}
+
+/*container 3 열 content_nav 페이지 네비게이션 메뉴바*/
+ul.content_nav{display:flex; text-align: center; line-height: 70px;
+opacity:0; transform: translateY(100px); transition: all 1s ease 0.5s;}
+ul.content_nav>li{flex:1; border-right:1px solid #ddd;}
+ul.content_nav>li:last-of-type{border-right:none;}
+ul.content_nav>li>a{font-size: 18px; color:#333;}
+
+/*on 이 붙은 경우 추후 페이지 결합을 위해*/
+ul.content_nav>li.on{background-color: #8dc73f;}
+ul.content_nav>li.on>a{color:#fff;}
+
+/*container 4열 investment 연간 재무실적 에대한 페이지설명*/
+
+/*1열 미니메뉴 재무데이터 /비재무 데이터 */
+div.investment>ul{display:flex; justify-content:center; margin-top:105px;
+opacity: 0; transform: translateY(100px); transition: all 1s ease 0.5s;}
+
+/*li 기본속성*/
+div.investment>ul>li{position:relative;}
+/*재무데이터*/
+div.investment>ul>li:first-of-type>span>a{padding-right:55px;border-right:1px solid #d7d7d7;}
+/*비재무데이터*/
+div.investment>ul>li:last-of-type>span>a{padding-left:55px;}
+/*텍스트*/
+div.investment>ul>li>span>a{font-size:20px; color:#333;}
+/*on 속성*/
+div.investment>ul>li.on>span::after{content:''; display:inline-block; position:absolute; z-index:-1; bottom:0; left:0; 
+  width:80%; height:10px; background: #8dc63f;  transform:translateX(-15%);}
+div.investment>ul>li.on>span>a{font-weight: 600;}
+/*재무데이터의 on 속성*/
+div.investment>ul>li:first-of-type.on>span::after{content:'';transform:translateX(-10%);}
+/*비재무데이터의 on 속성*/
+div.investment>ul>li:last-of-type.on>span::after{content:''; transform:translateX(10%);}
+
+/*2열 .financial_visual 사진*/
+.financial_visual{overflow: hidden; height:395px; margin-top:105px;
+opacity: 0; transform: translateY(100px);transition: all 2.5s ease 0.5s;}
+.financial_visual>img{width:100%; margin-top:-250px;}
+
+/*2열 .financial_title 연간 재무실적*/
+.financial_title{margin:70px 0 90px 95px;}
+.financial_title>h3{float:left; font-family:'PulmuoneLOHASBold'; font-size:35px; color:#333; opacity: 0; transform: translateY(100px); transition: all 0.5s ease 0.5s;}
+.financial_title>p{float:left; margin-left:105px; font-size:18px; color:#333; text-align: center;opacity: 0; transform: translateY(100px); transition: all 1.5s ease 0.5s;}
+.financial_title>p>span{color:#8dc73f;}
+
+/*container 5열 재무상태표*/
+/*테이블 제목*/
+.finance>h4{margin-bottom: 50px; text-align: center; font-size:30px; font-family:'PulmuoneLOHASBold';color:#333;
+  opacity: 0; transform: translateY(100px); transition: all 1s ease 0.5s;}
+
+.finance>span{display:inline-block; width:100%; margin:10px 0 30px; text-align: end; color:#666;}
+/*테이블*/
+.finance>table{width:100%; height:635px; text-align: center;
+opacity: 0; transform: translateY(300px); transition: all 1s ease 0.5s;}
+
+/*전체 td 의 디폴트값*/
+.finance>table td{position:relative; height:58px; padding-right:25px; text-align:right; font-size:15px; color:#666; 
+  border: 1px solid #d6d6d6;}
+/*윗쪽 보더값 제거*/
+.finance>table>tbody>tr:first-of-type>td{border-top: none;}
+/*왼쪽 보더값 제거*/
+.finance>table>tbody>tr>td:first-child{border-left: none;}
+.finance>table>tfoot>tr>td:first-child{border-left: none;}
+/*오른쪽 보더값 제거*/
+.finance>table>tbody>tr>td:last-child{border-right: none;}
+.finance>table>tfoot>tr>td:last-child{border-right: none;}
+/*t head*/
+.finance>table>thead{color:#fff; font-size: 17px; background-color: #8dc73f;}
+.finance>table>thead>tr>th{height:58px; border-right:1px solid #fff; text-align: center;}
+.finance>table>thead>tr.row_line1{border-bottom:1px solid #fff;}
+/*전체 기본 th의 디폴트값 2,3,4열 */
+.finance>table>thead>tr.row_line1 th{width:185px;}
+/*첫번째열*/
+.finance>table>thead>tr.row_line1>th:first-of-type{width:250px;}
+/*상한가와 하한가의 삼각형*/
+.up:before{
+  content:""; 
+  position:absolute; 
+  display:block;
+  top:50%; left:55%; 
+  margin-top:-3px; 
+  width:0;
+  height:0;
+  border-bottom: 7px solid #2169d8; ;
+  border-left:6px solid transparent;
+  border-right:6px solid transparent;
+}
+.down:before{
+  content:""; 
+  position:absolute; 
+  display:block;
+  top:50%; left:55%; 
+  margin-top:-3px; 
+  width:0;
+  height:0;
+  border-top: 7px solid #d0020a; 
+  border-left:6px solid transparent;
+  border-right:6px solid transparent;
+}
+
+/*container 6열 주식정보*/
+/*테이블 제목*/
+.stock>h4{margin:90px 0 50px; text-align:center;  font-size:30px; font-family:'PulmuoneLOHASBold'; color:#333;
+opacity: 0; transform: translateY(100px); transition: all 1s ease 0.5s;}
+/*전체 테이블*/
+.stock>table{width:100%; height:465px; text-align: center;
+  opacity: 0; transform: translateY(300px); transition: all 1s ease 0.5s;}
+
+/*thead*/
+.stock>table>thead{color:#fff; font-size: 17px; background-color: #8dc73f;}
+.stock>table>thead>tr>th{width:235px; height:58px; border-right:1px solid #fff; text-align: center;}
+/*전체 td의 디폴트값*/
+.stock>table td{height:58px; padding-right:25px; font-size: 15px; color:#666; text-align: right;
+border:1px solid #d6d6d6;}
+.stock>table>tbody>tr.line td{border-top: 2px solid #333;}
+.stock>table>tbody>tr.gray td{background: #f4f4f4;}
+/*왼쪽 보더값 제거*/
+.stock>table>tbody>tr>td:first-child{padding-left: 25px; border-left: none; text-align: left; }
+.stock>table>tfoot>tr>td:first-child{border-left:none;}
+
+/*스크롤 이벤트 모음집*/
+
+.spot.on>p,
+.content_nav.on,
+.investment.on>ul,
+.financial_visual.on,
+.financial_title.on>h3,
+.financial_title.on>p,
+.finance.on>h4,
+.finance.on>table,
+.stock.on>h4,
+.stock.on>table{
+  opacity: 1; transform: translateY(0)
+}
+
+}/*pc 종료*/

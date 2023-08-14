@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>풀무원 | 투자정보</title>
+  <link rel ="shortcut icon" href="./img/pulmuone_title.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="./css/import.css"/>
+  <link rel="stylesheet" href="./css/sub1.css"/>
+  <script src="./js/main.js"></script>
+  <script src="./js/sub1.js"></script>
+</head>
+<body>
+  <!--wrap-->
+  <div id="wrap">
+    <!--header-->
+    <div id="header">
+
+    </div>
+    <!--//header-->
+    <!--sub_header-->
+    <div class="sub_header">
+      <ul>
+        <li><a href="./index.html"><img src="./img/sub_1/loca_home.png" alt="집모양 아이콘"/></a></li>
+        <li class><a href="#">회사소개</a>
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">사회책임경영</a></li>
+            <li><a href="#">바른먹거리</a></li>
+            <li><a href="#">뉴스룸</a></li>
+          </ul>
+        </li>
+        <li><a href="#">투자정보</a>
+          <ul>
+            <li><a href="#">총괄CEO인사말</a></li>
+            <li><a href="#">CI소개</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">가치체계</a></li>
+            <li><a href="#">사업소개</a></li>
+            <li><a href="#">동반성장</a></li>
+            <li><a href="#">기업지배구조</a></li>
+            <li><a href="#">투자정보</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--//sub_header-->
+    <!--container-->
+    <main id="container">
+      <!--spot_visual-->
+      <div class="spot_visual">투자정보 페이지 이미지</div>
+      <!--//spot_visual-->
+      <!--spot-->
+      <div class="spot">
+        <h2><span>투자정보</span></h2>
+        <!--span 제작 단계에서 사용용도 변경-->
+        <p>풀무원의<span>경영정보, 재무정보, 주식정보, 전자공고</span>등을 <br/> 한눈에 확인할 수 있습니다.</p>
+      </div>
+      <!--//spot-->
+      <!--content_nav-->
+      <select class="mob_content_nav" name="content_nav">
+        <option value="경영정보">경영정보</option>
+        <option value="재무정보">재무정보</option>
+        <option value="주식정보">주식정보</option>
+        <option value="데이터">데이터</option>
+        <option value="주주총회">주주총회</option>
+        <option value="주주제안">주주제안</option>
+        <option value="공시자료">공시자료</option>
+        <option value="전자공고">전자공고</option>
+      </select>
+      <ul class="content_nav active">
+        <li><a href="#">경영정보</a></li>
+        <li><a href="#">재무정보</a></li>
+        <li><a href="#">주식정보</a></li>
+        <li class="on"><a href="#">데이터</a></li>
+        <li><a href="#">주주총회</a></li>
+        <li><a href="#">주주제안</a></li>
+        <li><a href="#">공시자료</a></li>
+        <li><a href="#">전자공고</a></li>
+      </ul>
+      <!--//content_nav-->
+      <!--investment-->
+      <div class="investment">
+        <ul>
+          <!--span 임의로 추가-->
+          <li class="on"><span><a href="#">재무 데이터</a></span></li>
+          <li><span><a href="#">비재무 데이터</a></span></li>
+        </ul>
+        <!--financial_visual-->
+        <div class="financial_visual active">
+          <img src="./img/sub_1/m_data_img01.png" alt="재무데이터 이미지"/>
+        </div>
+        <!--//financial_visual-->
+        <!--financial_title-->
+        <div class="financial_title">
+          <h3>연결 재무실적</h3>
+          <p>
+            한국채택국제회계기준(K_IFRS) 연결재무제표 기준으로 2020년 풀무원은
+            <span>매출 2조 3,112억원,<br/> 영업이익 460억원의</span> 
+            실적을 달성하였습니다.
+          </p>
+        </div>
+        <!--//financial_title-->
+      </div>
+      <!--//investment-->
+      <!--finance-->
+        <article class="finance">
+          <h4>재무상태표</h4>
+          <span>단위:억원</span>
+          <!--table-->
+          <table>
+            <caption class="blind">재무 상태표</caption>
+            <!--thead-->
+            <thead>
+              <tr class="row_line1">
+                <th rowspan="2" class="divition">구분</th>
+                <th rowspan="2" class="2020">2020년</th>
+                <th rowspan="2" class="2021">2021년</th>
+                <th rowspan="2" class="2022">2022년</th>
+                <th colspan="2" class="2021yoy">2021년 대비증감</th>
+              </tr>
+              <tr class="row_line2">
+                <th class="amount">금액</th>
+                <th class="percent">비율(%)</th>
+              </tr>
+            </thead>
+            <!--//thead-->
+            <!--tbody-->
+            <tbody>
+              <tr>
+                <td class ="divition">유동자산</td>
+                <td class ="2020">6,304</td>
+                <td class ="2021">7,110</td>
+                <td class ="2022">7,523</td>
+                <td class ="amount up">413</td>
+                <td class ="percent">5.8%</td>
+              </tr>
+              <tr>
+                <td class ="divition">비유동자산</td>
+                <td class ="2020">10,632</td>
+                <td class ="2021">12,584</td>
+                <td class ="2022">12,969</td>
+                <td class ="amount up">385</td>
+                <td class ="percent">3.1%</td>
+              </tr>
+              <tr>
+                <td class ="divition">유동부채</td>
+                <td class ="2020">7,769</td>
+                <td class ="2021">8,038</td>
+                <td class ="2022">8,927</td>
+                <td class ="amount up">889</td>
+                <td class ="percent">11,1%</td>
+              </tr>
+              <tr>
+                <td class ="divition">비유동부채</td>
+                <td class ="2020">4,038</td>
+                <td class ="2021">5,757</td>
+                <td class ="2022">6,099</td>
+                <td class ="amount up">342</td>
+                <td class ="percent">5,9%</td>
+              </tr>
+              <tr>
+                <td class ="divition">재배기업의 소유주</td>
+                <td class ="2020">4,501</td>
+                <td class ="2021">4,666</td>
+                <td class ="2022">4,122</td>
+                <td class ="amount down">-544</td>
+                <td class ="percent">-11.7%</td>
+              </tr>
+              <tr>
+                <td class ="divition">비지배지분</td>
+                <td class ="2020">628</td>
+                <td class ="2021">1,232</td>
+                <td class ="2022">1,344</td>
+                <td class ="amount up">112</td>
+                <td class ="percent">9.1%</td>
+              </tr>
+            </tbody>  
+            <!--//tbody-->
+            <!--tfoot-->
+            <tfoot>
+              <tr>
+                <td class ="divition">자산총계</td>
+                <td class ="2020">16,936</td>
+                <td class ="2021">19,694</td>
+                <td class ="2022">20,492</td>
+                <td class = "amount up">798</td>
+                <td class ="percent">4.1%</td>
+              </tr>
+              <tr>
+                <td class ="divition">부계총계</td>
+                <td class ="2020">11,807</td>
+                <td class ="2021">13,796</td>
+                <td class ="2022">15,026</td>
+                <td class ="amount up">1,230</td>
+                <td class ="percent">8,9%</td>
+              </tr>
+              <tr>
+                <td class ="divition">자본총계</td>
+                <td class ="2020">5,129</td>
+                <td class ="2021">5,898</td>
+                <td class ="2022">5,466</td>
+                <td class ="amount down">-432</td>
+                <td class ="percent">-7.3%</td>
+              </tr>
+            </tfoot>
+            <!--//tfoot-->
+          </table>
+          <!--//table-->
+        </article>
+        <!--investment-->
+        <!--stock-->
+        <article class ="stock">
+          <h4>주식정보</h4>
+          <!--table-->
+          <table>
+            <caption class ="blind">주식정보</caption>
+              <!--thead-->
+              <thead>
+                <tr>
+                  <th class ="divition" scope="row">구분</th>
+                  <th class ="unit" scope="row">단위</th>
+                  <th class ="2020" scope="row">2020년</th>
+                  <th class ="2021" scope="row">2021년</th>
+                  <th class ="2022" scope="row">2022년</th>
+                </tr>
+              </thead>
+              <!--//thead-->
+              <!--tbody-->
+              <tbody>
+                <tr>
+                  <td class ="divition">액면가</td>
+                  <td class ="unit">원</td>
+                  <td class ="2020">500</td>
+                  <td class ="2021">500</td>
+                  <td class ="2022">500</td>
+                </tr>
+                <tr>
+                  <td class ="divition">발행주식총수</td>
+                  <td class ="unit">주</td>
+                  <td class ="2020">42,155,119</td>
+                  <td class ="2021">42,155,122</td>
+                  <td class ="2022">42,155,122</td>
+                </tr>
+                <tr class ="line gray">
+                  <td class ="divition">주가</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class ="divition">-최고가</td>
+                  <td class ="unit">원</td>
+                  <td class ="2020">20,950</td>
+                  <td class ="2021">23,000</td>
+                  <td class ="2022">18,600</td>
+                </tr>
+                <tr>
+                  <td class ="divition">-최저가</td>
+                  <td class ="unit">원</td>
+                  <td class ="2020">15,100</td>
+                  <td class ="2021">16,000</td>
+                  <td class ="2022">10,050</td>
+                </tr>
+                <tr>
+                  <td class ="divition">-종가</td>
+                  <td class ="unit">원</td>
+                  <td class ="2020">16,550</td>
+                  <td class ="2021">17,300</td>
+                  <td class ="2022">11,200</td>
+                </tr>
+                <tr class="line">
+                  <td class ="divition">외국인 지분율</td>
+                  <td class ="unit">%</td>
+                  <td class ="2020">0.81</td>
+                  <td class ="2021">1.06</td>
+                  <td class ="2022">0.92</td>
+                </tr>
+              </tbody>
+              <!--//tbody-->
+          </table>
+          <!--//table-->
+        </article>
+        <!--stock-->
+    </main>
+    <!--//container-->
+    <!--footer-->
+    <div id="footer">
+
+    </div>
+    <!--//footer-->
+  </div>
+  <!--//wrap-->
+
+  <script>
+    async function fetchHtmlAsText(url){
+      const response = await fetch(url);
+      return await response.text();
+    }
+
+    async function importPage(target){
+      document.querySelector('#'+target).innerHTML = await fetchHtmlAsText(target+'.html');
+    }
+    importPage("header")
+    importPage("footer")
+  </script>
+</body>
+</html>

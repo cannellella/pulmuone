@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>풀무원 | 고객기쁨센터</title>
+  <link rel ="shortcut icon" href="./img/pulmuone_title.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="./css/import.css"/>
+  <link rel="stylesheet" href="./css/sub2.css"/>
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <!--wrap-->
+  <div id="wrap">
+    <!--header-->
+    <div id="header">
+
+    </div>
+    <!--//header-->
+    <!--sub_header-->
+    <div class="sub_header">
+      <h2><img src="./img/logo.png" alt="풀무원 로고"/>고객기쁨센터</h2>
+      <div class="mob_menu_close">
+        <a href="#"><img src="./img/btn_mob_close.png" alt="모바일 메뉴종료"></a>
+      </div>
+      <ul>
+        <li class="on"><a href="#">고객의소리</a></li>
+        <li><a href="#">고객기쁨활동</a></li>
+      </ul>
+    </div>
+    <!--//sub_header-->
+    <!--container-->
+    <main id="container">
+      <!--spot-->
+      <div class="spot">
+        <p>
+          풀무원은 고객의 의견을 소중히 여깁니다<br/>
+          풀무원 고객기쁨센터
+        </p>
+        <p>궁금한 점을 접수하는 게시판입니다.</p>
+      </div>
+      <!--//spot-->
+      <!--ul-->
+      <ul>
+        <li><span><a href="#">FAQ</a></span></li>
+        <li class="on"><span><a href="#">일반문의</a></span></li>
+        <li><span><a href="#">칭찬/격려</a></span></li>
+        <li><span><a href="#">불만/불편사항</a></span></li>
+      </ul>
+      <!--//ul-->
+      <!--content-->
+      <section class="content">
+        <!--form-->
+        <form action="#" method="post" class="cs">
+          <h3>개인정보 수집 및<br/> 이용에 대한<br/> 안내 및 동의서</h3>
+          <!--fieldset-->
+          <fieldset>
+            <!--agree_info-->
+            <div class="agree_info">
+              <ul>
+                <li>
+                  <dl>
+                    <dt>1. 수집 항목 및 이용기간</dt>
+                    <dd>[필수] 이름, 이메일, 전화번호<br/>
+                      [선택] 주소 및 필수 항목 외 개인이 직접 입력한 내용<br/>
+                      * 서비스 이용 과정이나 처리 과정에서 아래와 같은 정보들이 생성되어 수집될 수 있습니다. -접속 IP정보, 접속 로그
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>2. 이용목적</dt>
+                    <dd> 
+                      - 문의접수 및 결과 회신, 서비스 만족도 조사 진행<br/>
+                      - 불량이용 사용자의 사이트 접근 제한</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>3. 보유기간 및 이용기간</dt>
+                    <dd>
+                      원칙적으로 개인정보의 수집목적 또는 제공받은 목적이 달성되면 지체 없이 파기합니다. 다만, 관계법률에 의해 보전<br/>
+                      할 필요가 있는 경우에는 일정기간 보전합니다.<br/>
+                      소비자의 불만 또는 분쟁처리에 관한 기록 : 3년<br/>
+                      (전자상거래등에서의 소비자보호에 관한 법률)
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>위 항목 ‘개인정보 수집 및 이용에 대한 동의’를 거부하실 수 있습니다.다만, 정보수집 및 이용을 거부하실 경우,</dt>
+                    <dd>
+                      문의 작성이 되지 않습니다.
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <!--//agree_info-->
+            <!--agree_check-->
+            <div class="agree_check">
+              <input type="radio" name="agree" id="agree" title="개인정보 수집 및 이용에 대한 동의 여부(Y)"/>
+              <label for="agree">동의합니다</label>
+              <input type="radio" name="agree" id="disagree" title="개인정보 수집 및 이용에 관한 동의여부(N)"/>
+              <label for="disagree">동의하지않습니다.</label>
+            </div>   
+            <!--//agree_check-->  
+          </fieldset>
+          <!--//fieldset-->       
+          <h3>문의<br/>내용작성</h3>
+          <p>필수 항목<span class="arrow">&nbsp;</span></p>
+          <!--fieldset user_qna-->
+          <fieldset class="user_qna">
+            <!--legend + caption 두개다 반드시써야하는지,,,-->
+            <legend class="blind">문의 작성항목</legend>
+              <!--table-->
+              <table>
+                <caption class="blind">문의 작성항목 폼</caption>
+                <!--작성자 name-->
+                <tr class="name">
+                  <th scope="row"><label for="name" >작성자<span class="arrow">&nbsp;</span></label></th>
+                  <td><input type="text" id="name" title="이름입력칸"/></td>
+                </tr>
+                <!--이메일 e_mail-->
+                <tr class="e_mail">
+                  <th scope="row"><label for="e_mail" id="email" title="이메일">이메일</label><span class="arrow">&nbsp;</span></th>
+                  <!--이메일-->
+                  <td>
+                    <input type="email" id="e_mail"/><br/>
+                  <!--이메일 답변통보-->
+                    <input type="checkbox" id="email_notice"/>
+                    <label for="email_notice" title="이메일로 답변통보 를 받습니다">이메일 답변통보</label>
+                  </td>
+                </tr>
+                <!--제목 title-->
+                <tr class="title">
+                  <th scope="row"><label for="subject" title="제목">제목</label><span class="arrow">&nbsp;</span></th>
+                  <td><input type="text" id="subject"/></td>
+                </tr>
+                <!--rocation-->
+                <tr class="location">
+                  <th scope="row">LOCATION<span class="arrow">&nbsp;</span></th>
+                  <td>
+                    <input type="radio" name="rocation" id="domestic" checked title="국내"/>
+                    <label for="domestic">:국내</label>
+                    <input type="radio" name="rocation" id="international" title="국외"/>
+                    <label for="international">:국외</label>
+                  </td>
+                </tr>
+                <!--전화번호 phone-->
+                <tr class="phone">
+                  <th scope="row"><label for="phone" id="phone_number">전화번호</label><span class="arrow">&nbsp;</span></th>
+                    <td>
+                      <select name="phone_first" id="phone">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                      </select>
+                      &nbsp;-&nbsp;
+                      <input type="tel" id="phone_middle" maxlength="4" title="전화번호 중간 4자리"/> 
+                      &nbsp;-&nbsp;
+                      <input type="tel" id="phone_last" maxlength="4" title="전화번호 마지막 4자리"/>
+                      <input type="checkbox" id="sns_notice"/>
+                      <label for="sns_notice" title="SNS로 답변통보를 받습니다.">SNS 답변통보</label>
+                    </td>
+                  </tr>
+                <!--주소 address-->
+                <tr class="address">
+                  <th scope="row"><label for="address">주소</label></th>
+                  <td>
+                    <input type="text" id="address" disabled title="우편번호 앞자리"/>
+                    <label for="address"></label>
+                    <input type="button" name="address" value="우편번호검색">
+                  <!--집주소-->
+                    <input type="text" id="address_middle" title="집주소"/>
+                  <!--나머지주소-->
+                    <input type="text" id="address_last" title="나머지주소"/>
+                  </td>
+                </tr>
+                <!--제품 표기사항 product-->
+                <tr class="product">
+                  <th scope="row"><label for="product">제품표기사항</label></th>
+                  <td>            
+                    <input type="text" id="product" placeholder="제품명,유통기한,생산처정보를 기재해주시면 제품확인에 도움이 됩니다."/>
+                  </td>
+                </tr>
+                <!--내용 context-->
+                <tr class="context">
+                  <th scope="row"><label for="context">내용</label><span class="arrow">&nbsp;</span></th>
+                  <td>
+                    <textarea id="context" cols="60" rows="10" title="내용"></textarea>
+                  </td>
+                </tr>
+                <!--내용 구분 productdiv-->
+                <tr class="productdiv">
+                  <th scope="row"><label for="product">제품 구분<span class="arrow">&nbsp;</span></label></th>
+                  <td>
+                    <input type="radio" id="company" name="division" checked title="회사"/>
+                    <label for="company">회사</label>
+                    <input type="radio" id="product_set" name="division" title="제품"/>
+                    <label for="product">제품</label>
+                    <input type="radio" id="service" name="division" title="서비스"/>
+                    <label for="service">서비스</label>
+                  </td>
+                </tr>
+                <!--첨부파일 attach-->
+                <tr class="attach">
+                  <th scope="row">
+                    <label for="attach1">첨부파일</label>
+                    <label for="attach2"></label>
+                    <label for="attach3"></label>
+                    <label for="attach4"></label>
+                    <label for="attach5"></label>
+                  </th>
+                  <td>
+                    <input type="file" id="attach1"/>
+                    <input type="file" id="attach2"/>
+                    <input type="file" id="attach3"/>
+                    <input type="file" id="attach4"/>
+                    <input type="file" id="attach5"/>
+                    <p>- 10Mbyte 미만 파일만 업로드하세요.</p>
+                    <p>- 이미지, 문서 파일만 가능합니다.</p>
+                  </td>
+                </tr>
+                <!--비밀번호 pass-->
+                <tr class="pass">
+                  <th scope="row">
+                    <label for="pass" >비밀번호</label>
+                  </th>
+                    <td>
+                      <input type="password" id="pass" maxlength="4" title="비밀번호"/>
+                      <p>- 비밀번호는 추후 접수내용을 확인하실 때 필요합니다. 고객님께서 기억하기 쉬우신 번호로 설정해주세요.</p>
+                    </td>
+                </tr>
+              </table>
+              <!--//table-->
+              <!--btn_list-->
+              <div class="btn_list">
+                <span>
+                  <input type="submit" value="접수하기" title="접수하기 바로가기"/>
+                </span>
+                <span>
+                  <a href="#">취소</a>
+                </span>
+                <span>
+                  <a href="#">답변확인</a>
+                </span>
+              </div>
+              <!--//btn_list-->
+          </fieldset>
+          <!--//fieldset user_qna-->
+        </form>
+        <!--//form-->
+      </section>
+      <!--//content-->
+    </main>
+    <!--//container-->
+    <!--footer-->
+    <div id="footer">
+
+    </div>
+    <!--//footer-->
+  </div>
+  <!--//wrap-->
+
+  <script>
+    async function fetchHtmlAsText(url){
+      const response = await fetch(url);
+      return await response.text();
+    }
+
+    async function importPage (target) {
+      document.querySelector('#'+target).innerHTML = await fetchHtmlAsText(target+'.html');
+    }
+
+    importPage("header")
+    importPage("footer")
+  </script>
+</body>
+</html>
